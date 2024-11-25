@@ -1,0 +1,151 @@
+
+
+body {
+    background-color: #f3f4f6;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #343a40;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #007bff;
+}
+
+.btn {
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Темный цвет фона при наведении */
+}
+
+.btn-danger {
+    background-color: #dc3545; /* Цвет фона кнопки "Удалить отель" */
+    border-color: #dc3545; /* Цвет рамки кнопки */
+    transition: background-color 0.3s; /* Плавный переход при наведении */
+}
+
+.btn-danger:hover {
+    background-color: #c82333; /* Темный цвет фона при наведении */
+}
+
+.mb-3 {
+    margin-bottom: 1rem; /* Отступ снизу для кнопки добавления отеля */
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: center; /* Центрирование пагинации */
+    align-items: center;
+    margin-top: 2rem; /* Отступ сверху */
+    font-size: 1rem;
+    color: #343a40;
+}
+
+.pagination .step-links {
+    display: flex;
+    gap: 0.5rem; /* Отступ между элементами */
+}
+
+.pagination a {
+    color: #007bff;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination a:hover {
+    background-color: #e2e6ea;
+    color: #0056b3;
+}
+
+.pagination .current {
+    padding: 0.5rem 0.75rem;
+    background-color: #007bff;
+    color: #ffffff;
+    border-radius: 0.25rem;
+    border: 1px solid #007bff;
+    font-weight: bold;
+}
+
+.pagination .step-links .current-page {
+    font-weight: bold;
+    color: #343a40;
+}
+
+/* styles.css */
+
+
+.search-form input[type="text"] {
+    width: 100% !important;
+    padding: 0.5rem 1rem !important;
+    font-size: 1rem !important;
+    border: 1px solid #dee2e6 !important;
+    border-radius: 0.25rem 0 0 0.25rem !important;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.search-form input[type="text"]:focus {
+    border-color: #007bff !important;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3) !important;
+}
+
+/* Кнопка поиска */
+.search-form button {
+    padding: 0.5rem 1rem !important;
+    font-size: 1rem !important;
+    background-color: #336ca9 !important;
+    color: #ffffff !important;
+    border: 1px solid #007bff !important;
+    border-radius: 0 0.25rem 0.25rem 0 !important;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.search-form button:hover {
+    background-color: #0056b3 !important;
+    box-shadow: 0 0 8px rgba(0, 86, 179, 0.3) !important;
+}
+
+.search-form button:focus {
+    outline: none !important;
+}
+
